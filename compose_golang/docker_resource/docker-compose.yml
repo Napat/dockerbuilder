@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  app01:
+    image: golang:1.9-alpine
+    volumes:
+      - $PWD/..:/go/src/workspace
+    working_dir: /go/src/workspace
