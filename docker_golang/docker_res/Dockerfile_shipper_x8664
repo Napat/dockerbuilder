@@ -1,0 +1,5 @@
+FROM alpine:3.6
+WORKDIR /mnt/workspace
+ADD ./tmp/goapp /mnt/workspace
+RUN chmod a+x /mnt/workspace/goapp
+ENTRYPOINT ./goapp
